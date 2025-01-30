@@ -35,7 +35,7 @@ h1, p{
 
 p{
     font-family: "Roboto Mono" , serif ;
-    font-size: 1.13vw;
+    font-size: 1vw;
 }
 
 h1{
@@ -51,14 +51,14 @@ h3{
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 6vw;
+    font-size: 7.5vw;
     line-height: 75%;
     color: var(--c-text);
     letter-spacing: -6%;
 }
 
 .smallText{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 /*Sections ----------------------------------------------------------*/
@@ -81,7 +81,7 @@ h3{
     width: 100%;
     height: 100%;
 
-    /*overflow: hidden;*/
+    overflow: hidden;
 
     
 }
@@ -96,6 +96,7 @@ h3{
     border-right: 0px;
     border-style: solid;
     border-color: var(--c-text);
+    background-color: var(--c-background);
 
     justify-content: space-between;
     align-items: center;
@@ -167,14 +168,23 @@ h3{
 #section2{
     
     height: 100vh;
-    background-color: blueviolet;
+    background-color: var(--c-background);
 
     padding: 3vw;
 }
 
+#leftColSec2{
+    width: 47vw;
+}
+
 #rightColSec2{
     align-items: flex-end;
+    width: 47vw;
     
+}
+
+.crossOnglet{
+    width: 3%;
 }
 
 /*CTA ---------*/
@@ -182,6 +192,8 @@ h3{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    gap: 0.5vw;
 }
 
 #rightTextDivSec2{
@@ -192,24 +204,51 @@ h3{
 
 /*Spécialité 1---------------*/
 #spe1{
-    width: 40vw;
+    width: 45vw;
     height: 14vw;
     overflow: hidden;
 }
 /*Spécialité 2---------------*/
 #spe2{
-    width: 40vw;
+    width: 45vw;
     height: 14vw;
     overflow: hidden;
+
+    margin-top: -5vh;
+    margin-left: 7vw;
 }
 /*Spécialité 3---------------*/
 #spe3{
-    width: 40vw;
+    width: 45vw;
     height: 14vw;
     overflow: hidden;
+
+    margin-top: -5vh;
+    margin-left: 2.5vw;
+}
+
+/*Spécialité 4---------------*/
+#spe4{
+    width: 45vw;
+    height: 14vw;
+    overflow: hidden;
+
+    margin-top: 12vh;
+    margin-right: 2.5vw;
+}
+
+/*Spécialité 5---------------*/
+#spe5{
+    width: 45vw;
+    height: 14vw;
+    overflow: hidden;
+
+    margin-right: 15vw;
+    margin-top: -8vh;
 }
 
 .imgSpe{
     width: 100%;
     height: 100%;
+    background-size: contain;
 }
