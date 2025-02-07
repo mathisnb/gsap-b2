@@ -80,7 +80,6 @@ let tlProjets = gsap.timeline({
         scrub : 1,
         markers : true,
         toggleActions : "play none reverse reset",
-        //snap : 0.8,
     },
 })
 
@@ -89,7 +88,7 @@ tlProjets.from('#rox',{
     
     zIndex:1,
     motionPath : {
-        path :"M0,0S198.17,300,-600,280",
+        path :"M0,0S198.17,300,-900,280",
         autoRotate : false,
         transformOrigin : 'center center'},
     duration : 2,
@@ -99,9 +98,49 @@ tlProjets.from('#rox',{
     scale: 0,
     zIndex:2,
     motionPath : {
-        path :"M0,0S198.17,300,-600,280",
+        path :"M0,0S198.17,300,-900,280",
         autoRotate : false,
         transformOrigin : 'center center'},
     duration : 2,
-   
+
+})
+.from('#spraywall',{
+    scale: 0,
+    zIndex:2,
+    motionPath : {
+        path :"M0,0S198.17,300,-900,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+
+})
+.from('#photo',{
+    scale: 0,
+    zIndex:2,
+    motionPath : {
+        path :"M0,0S198.17,300,-900,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+
+})
+.from('#madrock',{
+    scale: 0,
+    zIndex:2,
+    motionPath : {
+        path :"M0,0S198.17,300,-900,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+
+})
+.from('#neria',{
+    scale: 0,
+    zIndex:2,
+    motionPath : {
+        path :"M0,0S198.17,300,-900,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+
 })

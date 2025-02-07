@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-/*Variables ---------------------------------*/
+/*Variables ---------------------------------------------------------------------------------------------------------------------------------*/
 :root{
     /* Colors */
     --c-background : rgb(20, 20, 20);
@@ -13,8 +13,12 @@
     /* Paddings and Margins */
     --mp-s: 20px;
     --mp-m: 40px;
+
+    /* Border Radius */
+    --br-s: 10px
 }
 
+/*General class----------------------------------------------------------------------------------------------------------------------------*/
 .flexrow{
     display: flex;
     flex-direction: row;
@@ -29,12 +33,20 @@
     justify-content: space-between;
 }
 
+.section{
+    padding: var(--mp-m);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
 
 body{
     background-color: var(--c-background);
 }
 
-h1, p{
+/*Font Styles ---------------------------------------------------------------------------------------------------------------------------*/
+h1,h3, p{
     color: var(--c-text);
 }
 
@@ -58,7 +70,6 @@ h3{
     font-style: normal;
     font-size: 7.5vw;
     line-height: 75%;
-    color: var(--c-text);
     letter-spacing: -6%;
 }
 
@@ -66,24 +77,25 @@ h3{
     font-size: 30px;
 }
 
-/*Sections ----------------------------------------------------------*/
+/*Sections -----------------------------------------------------------------------------------------------------------------------------*/
 
 
 /*Section 1-------------------------------------------------------------*/
 #section1{
     height: 90vh;
-    padding: var(--mp-m);
     margin-bottom: 10vh;
 }
 
 /*Onglets ------------------------------------------------------------*/
 .onglet{
     
-    border-radius: 10px;
+    /*Borders*/
+    border-radius: var(--br-s);
     border-color: var(--c-text);
     border-width: 1px;
     border-style: solid;
 
+    /*Size*/
     width: 100%;
     height: 100%;
 
@@ -92,80 +104,102 @@ h3{
     
 }
 
-.ongletHeader{
-    padding: var(--mp-s);
-    height: 3%;
 
+
+
+/*Header window 1st section*/
+.ongletHeader{
+
+    /*Disposition*/
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--mp-s);
+
+    /*Borders*/
     border-bottom: 1px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-style: solid;
     border-color: var(--c-text);
-    background-color: var(--c-background);
 
-    justify-content: space-between;
-    align-items: center;
+    /*Style*/
+    background-color: var(--c-background);
 }
+
 
 .nav {
     gap: 1vw;
 }
 
+
+
+
+/*Body window 1st section */
 .ongletBody{
 
+    /*Disposition*/
     align-items: stretch;
+
+    /*Size*/
     height:100% ;
-
-    /*background-color: brown;*/
-
-
 
 }
 
 #leftDivIntro{
-    width: 45%;
-    margin: 20px;
-    margin-right: 0px;
-    /*background-color: blue;*/
 
+    /*Size*/
+    width: 45%;
+
+    /*Disposition*/
+    margin: var(--mp-s);
+    margin-right: 0px;
     justify-content: space-between;
 }
 
 #rightDivIntro{
+
+    /*Size*/
     height: 100%;
     width: 55%;
-    /*background-color:aqua;*/
-
     
-    
+    /*Disposition*/    
     align-items: flex-end;
 }
 
 #text-intro-left{
+
+    /*Size*/
     width: 55%;
 }
 
 #introImageWrapper{
+
+    /*Size*/
     height: 60%;
     width: 100%;
 
+    /*Style*/
     background-image: url(assets/img/intro.jpg);
     background-size: cover;
 }
 
 #rightDivBotDivIntro{
-    width: fit-content;
-    justify-content: space-between;
-    align-items: flex-end;
 
-    padding: var(--mp-s);
+    /*SIze*/
+    width: fit-content;
     height: 40%;
 
-    /*background-color: blueviolet;*/
+    /*Disposition*/
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: var(--mp-s);
+
 }
 
 #text-intro-right{
+
+    /*Size*/
     width: 30vw;
 }
 
@@ -173,210 +207,292 @@ h3{
 /*Section 2 -------------------------------------------------------------------*/
 #section2{
     
+    /*Size*/
     height: 100vh;
-    background-color: var(--c-background);
 
-    padding: var(--mp-m);
-    margin-bottom: 10vh;
+    /*Style*/
+    background-color: var(--c-background);
 }
 
 #leftColSec2{
+
+    /*Size*/
     width: 47vw;
 }
 
 #rightColSec2{
-    align-items: flex-end;
+    
+    /*Size*/
     width: 47vw;
+
+    /*Disposition*/
+    align-items: flex-end;
     
 }
-
+/*Window cross */
 .crossOnglet{
-    width: 1rem;
+    width: 17px;
 }
 
-/*CTA ---------*/
+/*CTA */
 .CTA{
+
+    /*Disposition*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
     gap: 0.5vw;
+
 }
 
 #rightTextDivSec2{
+
+    /*Size*/
     width: fit-content;
+
+    /*Disposition*/
     gap: 1.5vh;
     justify-content: flex-end;
 }
 
-/*Spécialité 1---------------*/
-#spe1{
+.spe {
+
+    /*Size*/
     width: 45vw;
     height: 14vw;
+
+    /*Style*/
     overflow: hidden;
 }
+
 /*Spécialité 2---------------*/
 #spe2{
-    width: 45vw;
-    height: 14vw;
-    overflow: hidden;
 
+    /*Disposition*/
     margin-top: -5vh;
     margin-left: 7vw;
 }
 /*Spécialité 3---------------*/
 #spe3{
-    width: 45vw;
-    height: 14vw;
-    overflow: hidden;
 
+    /*Disposition*/
     margin-top: -5vh;
     margin-left: 2.5vw;
 }
 
 /*Spécialité 4---------------*/
 #spe4{
-    width: 45vw;
-    height: 14vw;
-    overflow: hidden;
 
+    /*Disposition*/
     margin-top: 12vh;
     margin-right: 2.5vw;
 }
 
 /*Spécialité 5---------------*/
 #spe5{
-    width: 45vw;
-    height: 14vw;
-    overflow: hidden;
 
+     /*Disposition*/
     margin-right: 15vw;
     margin-top: -8vh;
 }
-
+/*Image for spe cards*/
 .imgSpe{
+
+    /*Size*/
     width: 100%;
     height: 100%;
+
+    /*Style*/
     background-size: contain;
 }
 
 /*Section 3 -----------------------------------------------------------------------------------------------*/
 #section3{
-    padding:var(--mp-m);
-    gap: 3vw;
-    margin-bottom: 10vh;
+
+    /*Disposition*/
+    gap: var(--mp-m);
+    margin-bottom: var(--mp-m);
 }
 
 .sec3Title{
-    gap: 3vw;
+
+    /*Disposition*/
+    gap: var(--mp-m);
 }
 
 .sec3window{
+
+    /*Disposition*/
     margin-top: -32vh;
     z-index: -1;
 }
 
 .sec3Onglet {
+
+    /*Size*/
     width :65vw;
     
 }
 
-.sec3body{
-    align-items: flex-end;
-   
-}
+.alignEnd{
 
-.alignBot{
+    /*Disposition*/
     align-items: flex-end;
 }
 
 .sec3header{
+
+    /*Disposition*/
     display: flex;
     justify-content: end;
 }
 
 #sec3Image{
+
+    /*Size*/
     width : 50vw;
     height: 50vh;
+
+    /*Disposition*/
     z-index: 1;
 }
 
 #sec3Image2{
+
+    /*Size*/
     width : 40vw;
     height: 48vh;
+
+    /*Style*/
     object-fit: cover;
 }
 
 
 #p1sec3{
+
+    /*Size*/
     width: 30vw;
 }
 
 #paragraphInDivSec3{
+
+    /*Size*/
     width: 30vw;
+
+    /*Disposition*/
     margin: 20px;
 }
 
 #paragraphOutDivSec3{
+
+    /*Size*/
     width: 30vw;
+
+    /*Disposition*/
     margin-bottom: 20px;
 }
 
 
 /*Section 4 ---------------------------------------------------------------------------------------------------------------------*/
-#section4{
-    padding: var(--mp-m);
-    margin-bottom: 10vh;
-}
 
 .sec4Body{
+
+    /*Size*/
     height: 80vh;
     
+    /*Disposition*/
     display: flex;
     align-items: flex-start;
+
+    /*Style*/
+    position:relative; /*La section .sec4Body est donc parent des sections en absolute */
+    overflow:hidden; /*Donc maintenant elles sont affectées par la propriété overflow hidden et ne dépassent plus*/
 }
+
 
 .window{
-    width: 88vw;
+
+    /*Size*/
+    width: calc(100%-calc(var(--mp-m) * 2));
     height: 80vh;
     overflow: hidden;
-    transform-origin: center;
-    
-    
 }
 
-.windowsProject #project{
-    overflow: hidden;
-}
 
 .scrollableDiv{
+
+    /*Size*/
+    height: 100%;
+    width: 100%; 
+
+    /*Disposition*/
     position: absolute;
-    height: 80vh;
-    width: calc(100% - calc(var(--mp-m)*2));
+    
+    /*Style*/
     background-size: cover;
 
 }
 
 #rox{
+
+    /*Style*/
     background-image:url(assets/img/Affiche-1.jpg) ;
     background-position: bottom;
 }
 
 #evolv{
+
+    /*Style*/
     background-image:url(assets/img/Evolv-web.jpg) ;
     background-position: center;
 
 }
 
-.alignRight{
+#spraywall{
+
+    /*Style*/
+    background-image:url(assets/img/Spray\ Final.jpg) ;
+    background-position: center;
+
+}
+
+#photo{
+
+    /*Style*/
+    background-image:url(assets/img/IMG_6244-Avec\ accentuation-Bruit.jpg) ;
+    background-position: center;
+
+}
+
+#madrock{
+
+    /*Style*/
+    background-image:url(assets/img/final.jpg) ;
+    background-position: center;
+
+}
+
+#neria{
+
+    /*Style*/
+    background-image:url(assets/img/66b91d42117e0ccc451cc0a5_NERIA.png) ;
+    background-position: center;
+
+}
+
+.alignEnd{
+
+    /*Disposition*/
     align-items: end;
 }
 
 .marginProjectInfo{
 
+    /*Disposition*/
     padding:var(--mp-m);
     
-    
+
+    /*Style*/    
     background-color: var(--c-background);
     align-items: end;
     z-index: 5;
