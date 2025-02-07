@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPl
     trigger : '#section2',
     start : 'top 60%',
     end : 'top 20%',
-    markers : true,
+    //markers : true,
     id : '#introImageWrapper',
     toggleActions : 'none reverse reset'
     },*/
@@ -40,9 +40,9 @@ let i = 0;
 
 // Function which select the next path
 function accessPath(){
-    let path = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/AP-DG-2025-J7-37.jpg","assets/img/AP-DG-2025-J7-39.jpg","assets/img/intro.jpg"];
+    let path = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/AP-DG-2025-J7-39.jpg","assets/img/intro.jpg","assets/img/AP-DG-2025-J7-37.jpg"];
     let access = "assets/img/intro.jpg"
-    if (i==4) {
+    if (i==3) {
         i = 0;
     } 
     access = path[i];
@@ -52,73 +52,56 @@ function accessPath(){
 
 // This function change all images with id= "imgSpe"
 function changeImage() {
-    let elem = document.getElementById("change");
+    let elem = document.getElementById("sec3Image");
     elem.src = accessPath()
+    elem.style.objectFit = "cover";
     };
 
 
-// Timeline
+// Timeline image change
 let tl = gsap.timeline({
     repeat: -1,
     yoyo: true
 });
 
-tl.to(".imgSpe", {
+tl.to("#sec3Image", {
     duration: 1, 
     onComplete: changeImage,
 
 });
-/*let i = 0;
 
-
-//Choosing path
-function accessPath(){
-    let access = ""
-    let path = ["assets\img\AP-DG-2025-J7-33.jpg","assets\img\AP-DG-2025-J7-37.jpg","assets\img\AP-DG-2025-J7-39.jpg","assets\img\intro.jpg"];
-    if (i==5) {
-        i = 0;
-    } else {
-        access = path[i];
-        i+=1;
-    }
-    return access;
-}
-
-
-
-//Changing image
-function changeImage(){
-    document.getElementById('imgSpe').src = accessPath();
-}
-
-
-let tl = gsap.timeline({
-    repeat : -1,
-    yoyo : true,
+//Project appear
+let tlProjets = gsap.timeline({ 
+    scrollTrigger:{
+        trigger: "#section4",
+        pin: true,
+        start: "top 0%",
+        end: "+=2000",
+        scrub : 1,
+        markers : true,
+        toggleActions : "play none reverse reset",
+        //snap : 0.8,
+    },
 })
 
-tl.to(".imgSpe",
-    changeImage(),{stagger : 0.5,})
-.to(".imgSpe",
-    changeImage(),{stagger : 0.5,})*/
-
-//liste de chemins d'accès
-//variable i pour itérer sur la liste
-//si i >5 on réinitialise et on la met à 0
-//récupère et renvoie la valeur [i] de la liste
-//ajoute 1 à i
-
-/*gsap.to("#introImageWrapper", {
-    width: "100vw", // Remplit toute la largeur
-    height: "100vh", // Remplit toute la hauteur
-    top: 0,
-    left: 0,
-    position: "fixed",
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: "#section2",
-        start: "top bottom", // Débute quand le bas de section2 atteint le haut de la fenêtre
-        end: "top top", // Finit quand le haut de section2 atteint le haut de la fenêtre
-        scrub: 1, // Effet fluide
-    }
-});*/
+tlProjets.from('#rox',{
+    scale: 0,
+    
+    zIndex:1,
+    motionPath : {
+        path :"M0,0S198.17,300,-600,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+   
+})
+.from('#evolv',{
+    scale: 0,
+    zIndex:2,
+    motionPath : {
+        path :"M0,0S198.17,300,-600,280",
+        autoRotate : false,
+        transformOrigin : 'center center'},
+    duration : 2,
+   
+})

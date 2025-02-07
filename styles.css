@@ -5,9 +5,14 @@
 
 /*Variables ---------------------------------*/
 :root{
+    /* Colors */
     --c-background : rgb(20, 20, 20);
     --c-text : rgb(250, 250, 250);
     --c-accent : rgb(255, 0, 0);
+
+    /* Paddings and Margins */
+    --mp-s: 20px;
+    --mp-m: 40px;
 }
 
 .flexrow{
@@ -35,7 +40,7 @@ h1, p{
 
 p{
     font-family: "Roboto Mono" , serif ;
-    font-size: 1vw;
+    font-size: 14px;
 }
 
 h1{
@@ -67,7 +72,8 @@ h3{
 /*Section 1-------------------------------------------------------------*/
 #section1{
     height: 90vh;
-    padding: 3vw;
+    padding: var(--mp-m);
+    margin-bottom: 10vh;
 }
 
 /*Onglets ------------------------------------------------------------*/
@@ -87,7 +93,7 @@ h3{
 }
 
 .ongletHeader{
-    padding: 20px;
+    padding: var(--mp-s);
     height: 3%;
 
     border-bottom: 1px;
@@ -153,7 +159,7 @@ h3{
     justify-content: space-between;
     align-items: flex-end;
 
-    padding: 20px;
+    padding: var(--mp-s);
     height: 40%;
 
     /*background-color: blueviolet;*/
@@ -170,7 +176,8 @@ h3{
     height: 100vh;
     background-color: var(--c-background);
 
-    padding: 3vw;
+    padding: var(--mp-m);
+    margin-bottom: 10vh;
 }
 
 #leftColSec2{
@@ -184,7 +191,7 @@ h3{
 }
 
 .crossOnglet{
-    width: 3%;
+    width: 1rem;
 }
 
 /*CTA ---------*/
@@ -251,4 +258,128 @@ h3{
     width: 100%;
     height: 100%;
     background-size: contain;
+}
+
+/*Section 3 -----------------------------------------------------------------------------------------------*/
+#section3{
+    padding:var(--mp-m);
+    gap: 3vw;
+    margin-bottom: 10vh;
+}
+
+.sec3Title{
+    gap: 3vw;
+}
+
+.sec3window{
+    margin-top: -32vh;
+    z-index: -1;
+}
+
+.sec3Onglet {
+    width :65vw;
+    
+}
+
+.sec3body{
+    align-items: flex-end;
+   
+}
+
+.alignBot{
+    align-items: flex-end;
+}
+
+.sec3header{
+    display: flex;
+    justify-content: end;
+}
+
+#sec3Image{
+    width : 50vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+#sec3Image2{
+    width : 40vw;
+    height: 48vh;
+    object-fit: cover;
+}
+
+
+#p1sec3{
+    width: 30vw;
+}
+
+#paragraphInDivSec3{
+    width: 30vw;
+    margin: 20px;
+}
+
+#paragraphOutDivSec3{
+    width: 30vw;
+    margin-bottom: 20px;
+}
+
+
+/*Section 4 ---------------------------------------------------------------------------------------------------------------------*/
+#section4{
+    padding: var(--mp-m);
+    margin-bottom: 10vh;
+}
+
+.sec4Body{
+    height: 80vh;
+    
+    display: flex;
+    align-items: flex-start;
+}
+
+.window{
+    width: 88vw;
+    height: 80vh;
+    overflow: hidden;
+    transform-origin: center;
+    
+    
+}
+
+.windowsProject #project{
+    overflow: hidden;
+}
+
+.scrollableDiv{
+    position: absolute;
+    height: 80vh;
+    width: calc(100% - calc(var(--mp-m)*2));
+    background-size: cover;
+
+}
+
+#rox{
+    background-image:url(assets/img/Affiche-1.jpg) ;
+    background-position: bottom;
+}
+
+#evolv{
+    background-image:url(assets/img/Evolv-web.jpg) ;
+    background-position: center;
+
+}
+
+.alignRight{
+    align-items: end;
+}
+
+.marginProjectInfo{
+
+    padding:var(--mp-m);
+    
+    
+    background-color: var(--c-background);
+    align-items: end;
+    z-index: 5;
+
+    margin-bottom: -15vh;
 }
