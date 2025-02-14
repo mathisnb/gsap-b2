@@ -143,7 +143,7 @@ tlProjets.from('#rox',{
 let tlCtaImage = gsap.timeline({
     scrollTrigger : {
         trigger : "#section5",
-        markers : true,
+        //markers : true,
         start: "top 40%",
         end: "top 80%",
         scrub : 1,
