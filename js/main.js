@@ -1,30 +1,25 @@
 //GSAP Modules
 gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin);
 
-//GSAP Demo animation
-/*gsap.to("#introImageWrapper",{
-    motionPath : {
-        path : "M728.47,0S754.49,657.5,0,657.5",
-        autoRotate : false,
-    }
-    
-})*/
+//GSAP Animation-------------------------------------------------------------------------------------------------------------
 
-/*ScrollTrigger : {
-    duration : 3,
-    trigger : '#section2',
-    start : 'top 60%',
-    end : 'top 20%',
-    //markers : true,
-    id : '#introImageWrapper',
-    toggleActions : 'none reverse reset'
-    },*/
+//GSAP MatchMedia
+let mm =gsap.matchMedia();
 
-//Drag fonctionnality----------------------------------------
+mm.add({
+    isMobile : "(max-width:799px)",
+    isDesktop : "(min-width:800px)",
+},(context)=>{
+    let {isMobile,isDesktop} = context.conditions;
+
+  
+})
+
+//Drag fonctionnality
 Draggable.create(".spe",{
     type : "x,y",
-    inertia : true,
-    dragResistance : "0.97",
+    inertia : false,
+    dragResistance : "0.98",
     bounds: {minX: -20, minY: -20, maxX: 20, maxY: 20} , 
 
     onRelease: function () {
@@ -34,8 +29,7 @@ Draggable.create(".spe",{
 })
 
 
-
-//Changing path for sec3 images----------------------------------------------------------
+//Changing path for sec3 images
 let i = 0;
 
 // Function which select the next path
@@ -78,7 +72,7 @@ let tlProjets = gsap.timeline({
         start: "top 0%",
         end: "+=2000",
         scrub : 1,
-        markers : true,
+        //markers : true,
         toggleActions : "play none reverse reset",
     },
 })
@@ -144,3 +138,20 @@ tlProjets.from('#rox',{
     duration : 2,
 
 })
+
+//-----------------
+let tlCtaImage = gsap.timeline({
+    scrollTrigger : {
+        trigger : "#section5",
+        markers : true,
+        start: "top 40%",
+        end: "top 80%",
+        scrub : 1,
+        toggleActions : "play none reverse reset",
+    }
+})
+
+tlCtaImage.from('#imageCtaSection',{
+    scale : 0,
+})
+
