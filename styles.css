@@ -712,6 +712,7 @@ h3{
     #section2{
         flex-direction: column-reverse;
         height: fit-content;
+        gap: var(--mp-m);
     }
 
     .flexcolumn, .onglet, .spe{
@@ -734,7 +735,7 @@ h3{
         width: 100%;
         align-items: flex-start;
         margin: 0;
-        gap: 20px;
+        gap: var(--mp-m);
     }
 
     #spe1, #spe2, #spe3, #spe4, #spe5{
