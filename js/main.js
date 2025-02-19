@@ -33,10 +33,13 @@ Draggable.create(".spe",{
 let i = 0;
 
 // Function which select the next path
-function accessPath(){
-    let path = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/AP-DG-2025-J7-39.jpg","assets/img/intro.jpg","assets/img/AP-DG-2025-J7-37.jpg"];
+let path1 = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/rox2.jpg","assets/img/spraywall.jpg","assets/img/AP-DG-2025-J7-37.jpg","assets/img/madrock.jpg"];
+let path2 = ["assets/img/photographie2.jpg","assets/img/evolv.jpg","assets/img/photographie3.jpg","assets/img/neria.png","assets/img/AP-DG-2025-J3-16.jpg"];
+
+function accessPath(path){
+    
     let access = "assets/img/intro.jpg"
-    if (i==3) {
+    if (i==5) {
         i = 0;
     } 
     access = path[i];
@@ -47,20 +50,38 @@ function accessPath(){
 // This function change all images with id= "imgSpe"
 function changeImage() {
     let elem = document.getElementById("sec3Image");
-    elem.src = accessPath()
+    elem.src = accessPath(path1)
     elem.style.objectFit = "cover";
     };
 
 
-// Timeline image change
+function changeImage2() {
+    let elem = document.getElementById("sec3Image2");
+    elem.src = accessPath(path2)
+    elem.style.objectFit = "cover";
+    };
+
+// Timeline image change 1
 let tl = gsap.timeline({
     repeat: -1,
     yoyo: true
 });
 
 tl.to("#sec3Image", {
-    duration: 1, 
+    duration: 0.5, 
     onComplete: changeImage,
+
+});
+
+// Timeline image change 2
+let tl2 = gsap.timeline({
+    repeat: -1,
+    yoyo: true
+});
+
+tl.to("#sec3Image2", {
+    duration: 0.5, 
+    onComplete: changeImage2,
 
 });
 

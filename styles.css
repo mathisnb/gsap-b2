@@ -14,6 +14,10 @@
     --mp-s: 20px;
     --mp-m: 40px;
 
+    --mp-m-mobile: 20px;
+    --mp-s-mobile: 10px;
+
+
     /* Border Radius */
     --br-s: 10px
 }
@@ -55,6 +59,8 @@ body{
 /*Font Styles ---------------------------------------------------------------------------------------------------------------------------*/
 h1,h2,h3, p{
     color: var(--c-text);
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
 }
 
 p{
@@ -63,8 +69,6 @@ p{
 }
 
 h1, h2{
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 400;
     font-style: normal;
     font-size: 9vw;
     line-height: 75%;
@@ -72,8 +76,6 @@ h1, h2{
 }
 
 h3{
-    font-family: aktiv-grotesk, sans-serif;
-    font-weight: 400;
     font-style: normal;
     font-size: 7.5vw;
     line-height: 75%;
@@ -91,6 +93,10 @@ h3{
 #section1{
     height: 90vh;
     margin-bottom: 10vh;
+}
+
+#speSec1{
+    gap: 100px;
 }
 
 /*Onglets ------------------------------------------------------------*/
@@ -136,7 +142,7 @@ h3{
 
 
 .nav {
-    gap: 1vw;
+    gap: 10px;
 }
 
 
@@ -187,7 +193,7 @@ h3{
     width: 100%;
 
     /*Style*/
-    background-image: url(assets/img/intro.jpg);
+    background-image: url(assets/img/rox.jpg);
     background-size: cover;
 }
 
@@ -612,4 +618,168 @@ h3{
 
 #t-w-subtitle-cta{
     margin-left: 30px;
+}
+
+
+/*Design Mobile -------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 800px){
+
+    h1{
+        font-size: 45px;
+    }
+
+    .section{
+        padding : var(--mp-m-mobile);
+    }
+
+    #section1{
+        margin-bottom: 0;
+    }
+
+    #sec1Body{
+        flex-direction: column;
+    }
+
+    .expertise{
+        gap: 10px;
+    }
+
+    #leftDivIntro{
+        flex-direction: column-reverse;
+        width : auto;
+        gap : 20px;
+        align-items : start;
+        margin : var(--mp-s)
+    }
+
+    #rightDivIntro{
+        flex-direction: column;
+        width : 100%;
+       
+        align-items: flex-start;
+    }
+
+    #rightDivBotDivIntro{
+        width: 90%;
+        height: fit-content;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: var(--mp-s);
+    }
+
+    #speSec1 {
+        flex-direction: column;
+        gap: 0;
+        
+    }
+
+    #text-intro-left{
+        width: 80%;
+    }
+
+    #text-intro-right{
+        width: 40vw;
+    }
+
+    #introImageWrapper{
+        height: 50% !important;
+        width : 100% !important;
+    }
+
+    .xl-title{
+        font-size:85px ;
+        margin-left : -8px;
+    }
+
+    #introImageWrapper {
+        width: 50%;
+        height: 100%;
+    }
+
+    .ongletHeader{
+        padding: calc((var(--mp-s))/1.3);
+    }
+
+    p{
+        font-size: 12px !important;
+    }
+
+
+    /*Section 2 -----------------------------------------*/
+
+    #section2{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .flexcolumn, .onglet, .spe{
+        width: 100%;
+    }
+
+    .spe{
+        height: fit-content;
+    }
+
+    .imgSpe{
+        height: 100px;
+    }
+
+    #rightTextDivSec2{
+        align-items: flex-start;
+    }
+
+    #leftColSec2, #rightColSec2{
+        width: 100%;
+        align-items: flex-start;
+        margin: 0;
+        gap: 20px;
+    }
+
+    #spe1, #spe2, #spe3, #spe4, #spe5{
+        margin: 0;
+    }
+
+
+    /*Section 3 -------------------------------------------------------------------------*/
+
+    .sec3Title{
+        gap: var(--mp-m-mobile);
+    }
+
+    .column{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .sec3window{
+        margin-top: 0;
+        width: 90%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: var(--mp-m-mobile);
+    }
+
+    .sec3Onglet{
+        width: 100%;
+    }
+
+    #sec3Image{
+        width: 100%;
+    }
+
+    #sec3Image2{
+        width: fit-content;
+    }
+
+    #p1sec3{
+        width: 100%;
+        margin-top: var(--mp-m-mobile);
+        margin-bottom: var(--mp-m-mobile);
+    }
+
+    #paragraphOutDivSec3{
+        width : 100%;
+    }
 }
