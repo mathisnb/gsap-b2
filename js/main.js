@@ -27,7 +27,7 @@ function accessPath(path){
     
     //Algo to iterate in paths lists
     let access = "assets/img/intro.jpg"
-    if (i==5) {
+    if (i==6) {
         i = 0;
     } 
     access = path[i];
@@ -105,7 +105,7 @@ mm.add({
             end: isMobile ? "+=1000":"+=2000",
             scrub : 1,
             toggleActions : "play none reverse reset",
-            snap : isMobile ? 0 : 0.7,
+           
         },
     })
 
@@ -176,7 +176,7 @@ mm.add({
     let tlCtaImage = gsap.timeline({
         scrollTrigger : {
             trigger : "#section5",
-            start: isMobile ? "top 20%":"top 40%",
+            start: isMobile ? "top 45%":"top 40%",
             end: "top 80%",
             scrub : 1,
             toggleActions : "play none reverse reset",
