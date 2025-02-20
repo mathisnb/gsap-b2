@@ -20,6 +20,7 @@
     <!--Section 1 -------------------------------------------------------------------------------------------------->
    <section class="section" id="section1">
         <div class="flexcolumn onglet">
+            <!--Header ---------------------->
             <div class="flexrow ongletHeader">
                 <p>home</p>
                 <div class="flexrow nav">
@@ -28,6 +29,7 @@
                     <p>contact</p>
                 </div>
             </div>
+            <!--Body ------------------------>
             <div class="flexrow ongletBody" id="sec1Body">
                 <div class="flexcolumn" id="leftDivIntro">
                     <p id="text-intro-left">Lorem ipsum dolor sit amet consectetur. Enim id sit et est vitae nec aliquet. Praesent volutpat dictum at senectus mi integer. Non elit commodo pharetra sed. Mattis massa tristique eu purus aenean.</p>
@@ -55,108 +57,142 @@
         </div>
    </section>
         
+   <!--Section 2 -------------------------------------------------------------------------------------------------->
    <section class="flexrow sb-flex section" id="section2">
         <div class="flexcolumn" id="leftColSec2">
+            <!--Speciality 1---------->
             <div class="flexcolumn onglet spe" id="spe1">
                 <div class="flexrow ongletHeader">
                     <p>site web</p>
                     <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                 </div>
                 <div class="flexrow ongletBody">
-                    <img src="assets/img/neria.png" alt="" class="imgSpe">
+                    <img src="assets/img/neria.png" alt="Mobile and desktop version of a website of a recruitment firm for lawyers : Neria" class="imgSpe">
                 </div>
             </div>
+            <!--Speciality 2---------->
             <div class="flexcolumn onglet spe" id="spe2">
                 <div class="flexrow ongletHeader">
                     <p>graphisme</p>
                     <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                 </div>
                 <div class="flexrow ongletBody">
-                    <img src="assets/img/evolv.jpg" alt="" class="imgSpe">
+                    <img src="assets/img/evolv.jpg" alt="Poster promoting a pair of Evolv climbing shoes" class="imgSpe">
                 </div>
             </div>
+            <!--Speciality 3---------->
             <div class="flexcolumn onglet spe" id="spe3">
                 <div class="flexrow ongletHeader">
                     <p>branding</p>
                     <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                 </div>
                 <div class="flexrow ongletBody">
-                    <img src="assets/img/rox.jpg" alt="" class="imgSpe" id="change">
+                    <img src="assets/img/rox.jpg" alt="Poster of a climbing collective: Rox" class="imgSpe" id="change">
                 </div>
             </div>
         </div> 
         <div class="flexcolumn" id="rightColSec2">
+
+            <!--Title and CTA ------------------>
             <div class="flexcolumn" id="rightTextDivSec2">
                 <div class="flexrow sb-flex expertise">
                     <h3 class="smallText">L'expertise</h3>
                     <h3>QU'IL</h3>
                 </div>
                 <h3>VOUS FAUT</h3>
-                <div class="flexrow CTA">
-                    <img src="assets/svg/Vector 3.svg" alt="">
-                    <p>prendre contact</p>
+                <div class="flexcolumn alignEnd" onmouseover="lineCta()" onmouseout="lineCtaOut()" >
+                    <div class="flexrow CTA">
+                        <img src="assets/svg/Vector 3.svg" alt="">
+                        <a href="mailto:mathis.nicouleaubourles@gmail.com"><p>prendre contact</p></a>
+                    </div>
+                    <div id="ctaLine">
+
+                    </div>
+                    
                 </div>
             </div>
             
-            
+            <!--Speciality 4---------->
             <div class="flexcolumn onglet spe" id="spe4">
                 <div class="flexrow ongletHeader">
                     <p>packaging/design editorial</p>
                     <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                 </div>
                 <div class="flexrow ongletBody">
-                    <img src="assets/img/intro.jpg" alt="" class="imgSpe">
+                    <img src="assets/img/intro.jpg" alt="Black and white grainy gradient" class="imgSpe">
                 </div>
             </div>
+            <!--Speciality 5---------->
             <div class="flexcolumn onglet spe" id="spe5">
                 <div class="flexrow ongletHeader">
                     <p>vidéo/photographie</p>
                     <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                 </div>
                 <div class="flexrow ongletBody">
-                    <img src="assets/img/AP-DG-2025-J7-33.jpg" alt="" class="imgSpe">
+                    <img src="assets/img/AP-DG-2025-J7-33.jpg" alt="Picture of someone climbing on rocks" class="imgSpe">
                 </div>
             </div>
             
         </div>
    </section>
+
+   <!--Section 3 ---------------------------------------------------------------------------------->
    <section class="flexcolumn section" id="section3">
+        <!--Title and text--------->
         <div class="flexrow sec3Title">
             <h3 class="smallText">Une vision</h3>
             <h3>DIFFÉRENTE</h3>
         </div>
         <div>
             <div class="flexrow sb-flex column">
-                <img src="assets\img\intro.jpg" alt="" id="sec3Image" >
+                <img src="assets\img\intro.jpg" alt="Black and white grainy gradient" id="sec3Image" >
                 <p id="p1sec3">Lorem ipsum dolor sit amet consectetur. Enim id sit et est vitae nec aliquet. Praesent volutpat dictum at senectus mi integer. Non elit commodo pharetra sed. Mattis massa tristique eu purus aenean.</p>
             </div>
+
+            <!--Window------------------------------>
             <div class="flexrow alignEnd sb-flex sec3window">
                 <p  id="paragraphOutDivSec3">Lorem ipsum dolor sit amet consectetur. Enim id sit et est vitae nec aliquet. Praesent volutpat dictum at senectus mi integer. Non elit commodo pharetra sed. Mattis massa tristique eu purus aenean.</p>
                 <div class="onglet sec3Onglet">
+                    <!--Header --------->
                     <div class="ongletHeader sec3header">
                         <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
                     </div>
+                    <!--Body --------->
                     <div class="flexrow ongletBody alignEnd">
                         <p  id="paragraphInDivSec3">Lorem ipsum dolor sit amet consectetur. Enim id sit et est vitae nec aliquet. Praesent volutpat dictum at senectus mi integer. Non elit commodo pharetra sed.</p>
-                        <img src="assets\img\intro.jpg" alt="" id="sec3Image2">
+                        <img src="assets\img\intro.jpg" alt="Black and white grainy gradient" id="sec3Image2">
                     </div>
                 </div>
             </div>
         </div>
    </section>
+
+   <!--Section 4 ---------------------------------------------------------------------------------->
    <section class="section" id="section4">
+
+        <!--Window ------------------------>
         <div class="flexcolumn onglet">
+
+            <!--Header------------>
             <div class="flexrow ongletHeader">
                 <p>projets</p>
                 <img src="assets/svg/cross.svg" alt="" class="crossOnglet">
             </div>
+            
+            <!--Body-------------->
             <div class="ongletBody sec4Body">
                 <div class="flexrow alignCenter">
+
+                    <!--Title ----------------->
                     <div class="flexcolumn relative alignCenter projectSecTitle">
                         <h2>SÉLECTION</h2>
                         <h3 class="smallText">de projets</h3>
                     </div>
+
+                    <!--Window project ----------->
                     <div class="window" id="project">
+
+                        <!--Project 1-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="rox">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Rox.</p>
@@ -169,6 +205,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--Project 2-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="evolv">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Evolv</p>
@@ -180,6 +218,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--Project 3-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="spraywall">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Spraywall Contest</p>
@@ -191,6 +231,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--Project 4-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="photo">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Sport</p>
@@ -202,6 +244,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--Project 5-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="madrock">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Madrock</p>
@@ -213,6 +257,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!--Project 6-->
                         <div class="flexcolumn alignEnd scrollableDiv" id="neria">
                             <div class="flexcolumn marginProjectInfo">
                                 <p class="right-centered-para">Neria</p>
@@ -229,13 +275,19 @@
             </div>
         </div>
    </section>
+
+   <!--Section 5 ---------------------------------------------------------------------------------->
    <section id="section5">
         <div class="flexcolumn">
+
+            <!--Title-->
             <div>
                 <h2 class="xl-title">DISCUTONS</h2>
             </div>
             <div class="flexrow" id="bottomDivCta">
                 <div class="m-top" id="ctaBotFirstSec">
+
+                    <!--Subtitle-->
                     <div class="gapEightPx">
                         <h3 class="smallText">CASSEZ</h3>
                         <h3 class="smallText" id="s-w-subtitle-cta">LES</h3>
@@ -252,30 +304,43 @@
                         <p>votre</p>
                         <p>projet</p>
                     </div>
+
+                    <!--CTA Mail-->
                     <div class="flexrow CTA m-top">
                         <img src="assets/svg/Vector 3.svg" alt="">
                         <p>mail</p>
                     </div>
+
+                    <!--CTA Linkedin-->
                     <div class="flexrow CTA">
                         <img src="assets/svg/Vector 3.svg" alt="">
                         <p>linkedin</p>
                     </div>
+
+                    <!--CTA Insta-->
                     <div class="flexrow CTA">
                         <img src="assets/svg/Vector 3.svg" alt="">
                         <p>instagram</p>
                     </div>
+
+                    <!--CTA Behance-->
                     <div class="flexrow CTA">
                         <img src="assets/svg/Vector 3.svg" alt="">
                         <p>behance</p>
                     </div>
+
+                    <!--CTA Linktree-->
                     <div class="flexrow CTA">
                         <img src="assets/svg/Vector 3.svg" alt="">
                         <p>linktree</p>
                     </div>
+
                 </div>
                 <div class="flexrow " id="CtaImageTextDiv">
                     <img src="assets/img/AP-DG-2025-J3-16.jpg" alt="" id="imageCtaSection">
                     <div class="flexcolumn m-top sb-flex" id="rightTextCtaSec">
+
+                        <!--Speciality-->
                         <div class="flexcolumn alignEnd">
                             <p>webdesign</p>
                             <p>cms</p>
@@ -284,6 +349,8 @@
                             <p>vidéo</p>
                             <p>print</p>
                         </div>
+
+                        <!--Mail-->
                         <div class="flexcolumn alignEnd">
                             <p>mathis.nicouleaubourles</p>
                             <p>@gmail.com</p>

@@ -33,8 +33,8 @@ Draggable.create(".spe",{
 let i = 0;
 
 // Function which select the next path
-let path1 = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/rox2.jpg","assets/img/spraywall.jpg","assets/img/AP-DG-2025-J7-37.jpg","assets/img/madrock.jpg"];
-let path2 = ["assets/img/photographie2.jpg","assets/img/evolv.jpg","assets/img/photographie3.jpg","assets/img/neria.png","assets/img/AP-DG-2025-J3-16.jpg"];
+let path1 = ["assets/img/AP-DG-2025-J7-33.jpg","assets/img/rox2.jpg","assets/img/spraywall.jpg","assets/img/AP-DG-2025-J7-37.jpg","assets/img/madrock.jpg","assets/img/sacha-lunettes.jpg"];
+let path2 = ["assets/img/photographie2.jpg","assets/img/evolv.jpg","assets/img/photographie3.jpg","assets/img/neria.png","assets/img/AP-DG-2025-J3-16.jpg","assets/img/leoelie.jpg"];
 
 function accessPath(path){
     
@@ -176,3 +176,12 @@ tlCtaImage.from('#imageCtaSection',{
     scale : 0,
 })
 
+function lineCta(){
+    document.getElementById("ctaLine").style.width = "150px";
+    document.getElementById("ctaLine").style.height = "1px";
+    document.getElementById("ctaLine").style.backgroundColor = "white";
+}
+
+function lineCtaOut(){
+    document.getElementById("ctaLine").style.width = "0%";
+}

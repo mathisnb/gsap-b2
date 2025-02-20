@@ -86,6 +86,10 @@ h3{
     font-size: 30px;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Sections -----------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -256,6 +260,16 @@ h3{
     justify-content: flex-end;
     gap: 0.5vw;
 
+}
+
+.lineCta{
+
+    /*Size*/
+    width: 0%;
+    height: 2px;
+
+    /*Style*/
+    background-color: var(--c-text);
 }
 
 #rightTextDivSec2{
@@ -519,78 +533,108 @@ h3{
     border-width: 1px;
     border-style: solid;
 
+    /*Disposition*/
     margin-bottom: -15vh;
     margin-right: calc(4* var(--mp-m));
     margin-top: calc(4* var(--mp-m)) ;
 }
 
 .m-top{
+
+    /*Disposition*/
     margin-top:var(--mp-m);
 }
 
 .projectSecTitle{
+
+    /*Disposition*/
     margin-left: 25%;
     gap: 20px;
+
+    /*Style*/
     mix-blend-mode:color-dodge;
 }
 
 /*Section 5 -------------------------------------------------------*/
 
 #section5{
+
+    /*Disposition*/
     margin-top: calc(2*var(--mp-m));
 }
 
 .tierLargeDiv{
+
+    /*Size*/
     width: 30vw;
 }
 
 #imageCtaSection{
+
+    /*Disposition*/
     margin-top: -50px;
+
+    /*Size*/
     width: 50%;
     height: 60vh;
+
+    /*Style*/
     object-fit: cover;
     
 }
 
 #rightTextCtaSec {
-    padding-bottom: var(--mp-m);
-    width: 50%;
+
+    /*Disposition*/
     margin-top: var(--mp-m);
+    padding-bottom: var(--mp-m);
+
+    /*Size*/
+    width: 50%;
+    
 }
 
 #CtaImageTextDiv{
+
+    /*Size*/
     width: 60%;
+
+    /*Disposition*/
     justify-content: end;
     gap: 5vw;
-    /*background-color: aqua;*/
 }
 
 #CtaContactDiv{
+
+    /*Disposition*/
     align-items: end;
     justify-content: end;
-    /*width: 20vw;*/
     margin-top: var(--mp-m);
     padding-left: var(--mp-m);
     padding-bottom: var(--mp-m);
-    /*background-color: rgb(0, 255, 76);*/
-
 }
+
 .gapEightPx{
+
+    /*Disposition*/
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 #ctaBotFirstSec{
+
+    /*Disposition*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
     padding-bottom: var(--mp-m);
-    /*background-color: rgb(25, 0, 255);*/
 }
 
 #bottomDivCta{
+
+    /*Disposition*/
     display: flex;
     justify-content: space-between;
     padding-right: var(--mp-m);
@@ -600,23 +644,32 @@ h3{
 }
 
 .xl-title{
+
+    /*Disposition*/
     margin-left: calc(-1.5*var(--mp-s));
+
+    /*Size*/
     font-size: 305px;
 }
 
 .p-xl-text-sec{
+
+    /*Disposition*/
     padding-right: var(--mp-m);
     padding-left: var(--mp-m);
     padding-bottom: var(--mp-m);
-
     align-items: end;
 }
 
 #s-w-subtitle-cta{
+
+    /*Disposition*/
     margin-left: 40px;
 }
 
 #t-w-subtitle-cta{
+
+    /*Disposition*/
     margin-left: 30px;
 }
 
@@ -626,52 +679,79 @@ h3{
 @media(max-width: 800px){
 
     .xl-title{
-        font-size: 75px !important;
+
+        /*Size*/
+        font-size: 20vw !important;
+
+        /*Disposition*/
+        margin-left : -8px;
     }
 
     #section1, #section2, #section3, #section4, #section5{
         overflow-x: hidden;
-        
     }
 
     h1{
+
+        /*Size*/
         font-size: 45px;
     }
 
     .section{
+
+        /*Disposition*/
         padding : var(--mp-m-mobile);
     }
 
     #section1{
+
+        /*Disposition*/
         margin-bottom: 0;
     }
 
     #sec1Body{
+
+        /*Disposition*/
         flex-direction: column;
     }
 
     .expertise{
+
+        /*Disposition*/
         gap: 10px;
     }
 
     #leftDivIntro{
+
+        /*Disposition*/
         flex-direction: column-reverse;
-        width : auto;
         gap : 20px;
         align-items : start;
-        margin : var(--mp-s)
+        margin : var(--mp-s);
+
+        /*Size*/
+        width : auto;        
     }
 
     #rightDivIntro{
+
+        /*Disposition*/
         flex-direction: column;
+        align-items: flex-start;
+
+        /*Size*/
         width : 100%;
        
-        align-items: flex-start;
+        
     }
 
     #rightDivBotDivIntro{
+
+        /*Size*/
         width: 90%;
         height: fit-content;
+
+        /*Disposition*/
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
@@ -679,39 +759,48 @@ h3{
     }
 
     #speSec1 {
+
+        /*Disposition*/
         flex-direction: column;
         gap: 0;
         
     }
 
     #text-intro-left{
+
+        /*Size*/
         width: 80%;
     }
 
     #text-intro-right{
+
+        /*Size*/
         width: 40vw;
     }
 
     #introImageWrapper{
+
+        /*Size*/
         height: 50% !important;
         width : 100% !important;
     }
 
-    .xl-title{
-        font-size:85px ;
-        margin-left : -8px;
-    }
-
     #introImageWrapper {
+
+        /*Size*/
         width: 50%;
         height: 100%;
     }
 
     .ongletHeader{
+
+        /*Disposition*/
         padding: calc((var(--mp-s))/1.3);
     }
 
     p{
+
+        /*Size*/
         font-size: 12px !important;
     }
 
@@ -719,87 +808,118 @@ h3{
     /*Section 2 -----------------------------------------*/
 
     #section2{
+
+        /*Disposition*/
         flex-direction: column-reverse;
-        height: fit-content;
         gap: var(--mp-m);
+
+        /*Size*/
+        height: fit-content;
+        
     }
 
     .flexcolumn.onglet.spe{
+
+        /*Size*/
         width: 100%;
     }
 
     .spe{
+
+        /*Size*/
         height: fit-content;
     }
 
     .imgSpe{
+
+        /*Size*/
         height: 100px;
     }
 
     #rightTextDivSec2{
+
+        /*Disposition*/
         align-items: flex-start;
     }
 
     #leftColSec2, #rightColSec2{
+
+        /*Size*/
         width: 100%;
+
+        /*Disposition*/
         align-items: flex-start;
         margin: 0;
         gap: var(--mp-m);
     }
 
     #spe1, #spe2, #spe3, #spe4, #spe5{
+
+        /*Disposition*/
         margin: 0;
     }
 
 
     /*Section 3 -------------------------------------------------------------------------*/
 
+    .sec3Onglet, #sec3Image, #paragraphOutDivSec3, .sec3window, .column, #p1sec3{
+
+        /*Size*/
+        width: 100%;
+    }
+
     .sec3Title{
+
+        /*Disposition*/
         gap: var(--mp-m-mobile);
     }
 
     .column{
+
+        /*Disposition*/
         flex-direction: column;
-        width: 90%;
+
     }
 
     .sec3window{
+
+        /*Disposition*/
         margin-top: 0;
-        width: 100%;
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: var(--mp-m-mobile);
     }
 
-    .sec3Onglet{
-        width: 100%;
-    }
+   
 
-    #sec3Image{
-        width: 100%;
-    }
 
     #sec3Image2{
+
+        /*Size*/
         width: fit-content;
     }
 
     #p1sec3{
-        width: 100%;
+
+        /*Disposition*/
         margin-top: var(--mp-m-mobile);
         margin-bottom: var(--mp-m-mobile);
     }
 
-    #paragraphOutDivSec3{
-        width : 100%;
-    }
-
 
     /*Section 4 ----------------------------------------------------------------------------------*/
-    
+    .marginProjectInfo{
+
+        /*Disposition*/
+        margin-top: var(--mp-m);
+        margin-right: var(--mp-m);
+    }
 
 
     /*Section 5 ----------------------------------------------------------------------------------*/
     #bottomDivCta{
+
+        /*Disposition*/
         padding-left: var(--mp-m-mobile);
         padding-right: var(--mp-m-mobile);
         padding-bottom: var(--mp-m-mobile);
@@ -807,16 +927,26 @@ h3{
     }
 
     #CtaContactDiv{
+
+        /*Disposition*/
         padding-left: var(--mp-m-mobile);
+
+        /*Size*/
         width: 30vw;
     }
 
     #CtaImageTextDiv{
+
+        /*Size*/
         width: 100%;
     }
 
     #imageCtaSection{
+
+        /*Size*/
         height: 30vh;
+
+        /*Disposition*/
         margin-top: 0;
     }
 }
