@@ -724,7 +724,7 @@ h3{
         gap: var(--mp-m);
     }
 
-    .flexcolumn, .onglet, .spe{
+    .flexcolumn.onglet.spe{
         width: 100%;
     }
 
@@ -765,7 +765,7 @@ h3{
 
     .sec3window{
         margin-top: 0;
-        width: 90%;
+        width: 100%;
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: var(--mp-m-mobile);
@@ -795,9 +795,7 @@ h3{
 
 
     /*Section 4 ----------------------------------------------------------------------------------*/
-    #section3{
-        display: none;
-    }
+    
 
 
     /*Section 5 ----------------------------------------------------------------------------------*/
