@@ -54,6 +54,7 @@
 
 body{
     background-color: var(--c-background);
+    cursor: url(assets/img/circle.png),default;
 }
 
 /*Font Styles ---------------------------------------------------------------------------------------------------------------------------*/
@@ -98,6 +99,8 @@ a{
     height: 90vh;
     margin-bottom: 10vh;
 }
+
+
 
 #speSec1{
     gap: 100px;
@@ -199,6 +202,7 @@ a{
     /*Style*/
     background-image: url(assets/img/rox.jpg);
     background-size: cover;
+    background-position: bottom;
 }
 
 #rightDivBotDivIntro{
@@ -783,13 +787,6 @@ a{
         /*Size*/
         height: 50% !important;
         width : 100% !important;
-    }
-
-    #introImageWrapper {
-
-        /*Size*/
-        width: 50%;
-        height: 100%;
     }
 
     .ongletHeader{
