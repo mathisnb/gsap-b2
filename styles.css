@@ -435,7 +435,7 @@ a{
     /*Style*/
     position:relative; /*La section .sec4Body est donc parent des sections en absolute */
     overflow:hidden; /*Donc maintenant elles sont affectées par la propriété overflow hidden et ne dépassent plus*/
-    background-image: url(assets/img/intro.jpg);
+    background-image: url(assets/img/intro.webp);
     background-size: cover;
 }
 

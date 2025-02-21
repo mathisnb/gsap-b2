@@ -26,7 +26,7 @@ let path2 = ["assets/img/photographie2.jpg","assets/img/evolv.jpg","assets/img/p
 function accessPath(path){
     
     //Algo to iterate in paths lists
-    let access = "assets/img/intro.jpg"
+    let access = "assets/img/intro.webp"
     if (i==6) {
         i = 0;
     } 
