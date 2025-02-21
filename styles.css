@@ -767,6 +767,8 @@ a{
         /*Disposition*/
         flex-direction: column;
         gap: 0;
+        align-self: end;
+        gap: 3vh;
         
     }
 
